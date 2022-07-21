@@ -1,0 +1,22 @@
+<div class="row row-cols-1 row-cols-md-2 g-4 m-2">
+    <div *ngFor="let heroe of heroes">
+        <div class="col">
+            <div class="card border-light ">
+                <div class="row">
+
+                    <div class="col-md-4  ">
+                        <img [src]="heroe.img" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-5 card-body ">
+                        <h5 class="card-title">{{heroe.nombre}}</h5>
+                        <p class="card-text">{{heroe.poderes}}</p>
+
+                        <p></p>
+                        <p><b>personalidad: </b> {{heroe.personalidad}}</p>
+                        <p>Aparición: <b>{{heroe.historia}}</b></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

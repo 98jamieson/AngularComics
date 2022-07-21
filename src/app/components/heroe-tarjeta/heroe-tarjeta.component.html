@@ -1,0 +1,19 @@
+
+  <div class="col animated fadIn animated">
+    <div class="card m-3">
+
+      <img [src]=" heroe.img" [alt]="heroe.nombre">
+      <div class="card-body">
+        <h5 class="card-title">{{heroe.nombre}}</h5>
+        <p class="card-text">{{heroe.bio}}</p>
+      </div>
+      <div class="card-footer">
+        <p class="card-text">{{heroe.aparicion}}</p>
+      
+         <p><b>{{heroe.casa}}</b></p>
+         <p> indice: {{index}}</p>
+      </div>
+      <button class="btn btn-outline-primary" (click)="verHeroe()">ver mas..</button>
+     
+    </div>
+  </div>
